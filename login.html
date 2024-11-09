@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="php/login.php" method="post">
+            <h1>LOG-IN</h1>
+            <label for="log-email">Email : </label>
+            <input type="email" name="log-email" id="log-email" placeholder="Enter your email"><br>
+            <label for="log-pass">Password : </label>
+            <input type="password" name="log-pass" id="log-pass" placeholder="Enter your password"><br>
+            <div class="g-recaptcha" data-sitekey="6LdgZGcqAAAAADRv3PL5uvK-Nh-D5jG8VKTBiHzE"></div>
+            <br/>
+            <div class="log-in-div"><input type="submit" value="Log-In" name="log-in" id="log-in"></div>
+        </form>
+        <div class="last-links">
+            <a href="./forgot_pass.html" id="forgot-pass">Forgot Password</a>
+            <a href="signup.html">| Sign-Up</a>
+        </div>
+    </div>
+</body>
+
+</html>

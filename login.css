@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+
+:root{
+    --color1: #2f4858;
+    --color2: #006b84;
+    --color3: #00919c;
+    --color4: #00b595;
+    --color5: #00d871;
+    --color6: #67f520;
+    --color7: #dcf9d7;
+}
+
+body{
+    height: 100vh;
+    width: 100%; 
+    background-image: url(../img/img5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y:bottom;
+}
+
+.container{
+    height: 100vh;
+    width: 40%;
+    background-color: #dcf9d708;
+    backdrop-filter: blur(6px);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1{
+    color: var(--color7);
+    padding: 20px;
+    text-align: center;
+}
+
+form label{
+    color: var(--color7);
+    font-size: 20px;
+    display: block;
+    padding-bottom: 8px;
+    padding-top: 15px;
+}
+
+form input{
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background: transparent;
+    color: var(--color5);
+    border-bottom: 2px solid var(--color7);
+}
+
+form .log-in-div{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+form #log-in{
+    width: 150px;
+    background-color: var(--color2);
+    border: none;
+    color: var(--color7);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    &:hover{
+        background-color: var(--color3);
+        border: 2px solid var(--color7);
+    }
+}
+
+.last-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color4);
+}
+
+.last-links a{
+    text-decoration: none;
+    color: var(--color5);
+}

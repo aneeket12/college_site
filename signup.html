@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="php/signup.php" method="post" class="form-container">
+            <h1>Sign-Up</h1>
+            <label for="text-box">Name: </label>
+            <input type="text" name="name-input" id="text-box" placeholder="Enter your name"><br>
+
+            <label for="email-box">Email: </label>
+            <input type="email" name="email-input" id="email-box" placeholder="Enter your email" required><br>
+
+            <label for="date-box">DOB: </label>
+            <input type="date" name="date-input" id="date-box"><br>
+
+            <label for="mobile-box">Phone: </label>
+            <input type="text" name="mobile-input" id="mobile-box" placeholder="+91"><br>
+
+            <label for="pass-box">Password: </label>
+            <input type="password" name="pass-input" id="pass-box" placeholder="Enter your password" required><br>
+
+            <label for="role-box" class="role-text">Role: </label>
+            <input type="radio" name="role" class="role-box" value="Guest"><span>Guest</span>
+            <input type="radio" name="role" class="role-box" value="Admin"><span>Admin</span><br>
+            <p class="log-in-btn">Already have an account? <a href="login.html">Log In</a></p>
+
+            <div class="submit-btn"><input type="submit" value="Sign-Up" name="sign-up" id="signup"></div>
+        </form>
+    </div>
+</body>
+
+</html>
